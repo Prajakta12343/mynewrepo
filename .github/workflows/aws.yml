@@ -31,7 +31,7 @@ on:
     branches: [ "main" ]
 
 env:
-  AWS_REGION: us-east-1                   # set this to your preferred AWS region, e.g. us-west-1
+  AWS_REGION: ap-south-1                   # set this to your preferred AWS region, e.g. us-west-1
   ECR_REPOSITORY: mynewreo           # set this to your Amazon ECR repository name
   ECS_SERVICE: mynewservice                 # set this to your Amazon ECS service name
   ECS_CLUSTER: newcluster                 # set this to your Amazon ECS cluster name
@@ -58,7 +58,7 @@ jobs:
       with:
         aws-access-key-id: ${{ AKIAZDZTCAC5J2TKCPFD }}
         aws-secret-access-key: ${{ q+xiFvpymbvzvTHbhEHdnM9cRrcSjlVhnDou/+yd }}
-        aws-region: ${{ env.us-east-1 }}
+        aws-region: ${{ env.ap-south-1 }}
 
     - name: Login to Amazon ECR
       id: login-ecr
